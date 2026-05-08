@@ -3,8 +3,8 @@ from helpers import *
 n1=int(input("enter your first number"))
 n2=int(input("enter your second number"))
 
-print("select operation on two numbers")
-print("hello")
+print("select operation on two numbers,")
+print("mul,div,sub,add,pow,floor")
 
 
 operator =input("enter operation")
