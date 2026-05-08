@@ -4,6 +4,7 @@ n1=int(input("enter your first number"))
 n2=int(input("enter your second number"))
 
 print("select operation on two numbers")
+print("hello")
 
 
 operator =input("enter operation")
@@ -22,5 +23,8 @@ elif operator=="pow":
 
 elif operator=="div":
     print(div(n1,n2))
+
+elif operator=="floor":
+    print(floor(n1,n2))
 else:
     print("please enter valid option")
