@@ -1,17 +1,26 @@
-def greet(name):
-    print("hello")
-    print(f"welcome {name} to the application")
-    print("thank you for visiting")
+from helpers import *
 
-# user=input('enter your name')
-# greet(user)
+n1=int(input("enter your first number"))
+n2=int(input("enter your second number"))
+
+print("select operation on two numbers")
 
 
-def mul(a,b,c):
-    return a*b*c
+operator =input("enter operation")
 
-n1=int(input("number 1 :"))
-n2=int(input("number 2 :"))
-n3=int(input("number 3 :"))
+if operator=="mul":
+    print(mul(n1,n2))
 
-print(mul(n1,n2,n3))
+elif operator=="add":
+    print(add(n1,n2))
+
+elif operator=="sub":
+    print(sub(n1,n2))
+
+elif operator=="pow":
+    print(pow(n1,n2))
+
+elif operator=="div":
+    print(div(n1,n2))
+else:
+    print("please enter valid option")
