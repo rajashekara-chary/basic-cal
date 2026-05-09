@@ -4,16 +4,18 @@ from customer_login import *
 
 import streamlit as st
 
-print("1. customer login")
-print("2. admin Login")
+# st.write("1. customer login")
+# st.write("2. admin Login")
 
-choice = input("Enter choice: ")
+st.title("one piece bank")
+
+choice = st.selectbox('choice',{'customer login':1,'admin login':2})
 
 if choice == "1":
-    Bank_account(d)
+    st.write(Bank_account(d))
 
 elif choice == "2":
-    control(ad)
+    st.write(control(ad))
 
-else:
-    print("Invalid Choice")
+# else:
+#     st.write("Invalid Choice")
