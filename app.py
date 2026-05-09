@@ -1,30 +1,36 @@
 from helpers import *
+import streamlit as st
 
-n1=int(input("enter your first number"))
-n2=int(input("enter your second number"))
+st.title('calculator of two numbers')
 
-print("select operation on two numbers,")
-print("mul,div,sub,add,pow,floor")
+# n1=int(input("enter your first number"))
+# n2=int(input("enter your second number"))
+
+n1=int(st.number_input("enter your number"))
+n2=int(st.number_input("enter you second"))
+
+st.write("select operation on two numbers,")
+st.write("mul,div,sub,add,pow,floor")
 
 
-operator =input("enter operation")
+operator =st.text_input("enter operation")
 
 if operator=="mul":
-    print(mul(n1,n2))
+    st.write(mul(n1,n2))
 
 elif operator=="add":
-    print(add(n1,n2))
+    st.write(add(n1,n2))
 
 elif operator=="sub":
-    print(sub(n1,n2))
+    st.write(sub(n1,n2))
 
 elif operator=="pow":
-    print(pow(n1,n2))
+    st.write(pow(n1,n2))
 
 elif operator=="div":
-    print(div(n1,n2))
+    st.write(div(n1,n2))
 
 elif operator=="floor":
-    print(floor(n1,n2))
+    st.write(floor(n1,n2))
 else:
-    print("please enter valid option")
+    st.write("please enter valid option")
