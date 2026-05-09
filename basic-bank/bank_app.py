@@ -9,12 +9,12 @@ import streamlit as st
 
 st.title("one piece bank")
 
-choice = st.selectbox('choice',{'customer login':1,'admin login':2})
+choice = st.selectbox('choice',['customer login','admin login'])
 
-if choice == "1":
+if choice == "customer login":
     Bank_account(d)
 
-elif choice == "2":
+elif choice == "admin login":
     control(ad)
 
 # else:
