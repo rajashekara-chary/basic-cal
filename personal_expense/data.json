@@ -33,5 +33,19 @@
         "amount": 25000,
         "date": "11-05-2026",
         "description": "monthly salary"
+    },
+    {
+        "type": "income",
+        "category": "salary",
+        "amount": 26000.0,
+        "date": "10-3-2026",
+        "description": "monthly salary"
+    },
+    {
+        "type": "income",
+        "category": "bonus",
+        "amount": 10000.0,
+        "date": "02-02-2025",
+        "description": "work bonus"
     }
 ]

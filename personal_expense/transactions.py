@@ -81,23 +81,28 @@ def total_income(data):
     for i in data:
         if i['type']=="income":
             total_salary+=i['amount']
-    st.write(f"total income {total_salary}")
+    # st.write(f"total income {total_salary}")
     return total_salary
 
 
 # total expenses
 
 def total_expense(data):
-    total_expense=0
+    total_expense=0.0
     for i in data:
         if i['type']=='expense':
             total_expense+=i['amount']
 
-    st.write(f" your total expenses {total_expense}")
+    # st.write(f" your total expenses {total_expense}")
     return total_expense
     
 
 # remaining balance
+
+
+def balance_income(data):
+     balance= total_income(data)-total_expense(data)
+     return balance
 
 # category wise expense summary
 
