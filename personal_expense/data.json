@@ -1,0 +1,37 @@
+[
+    {
+        "type": "income",
+        "category": "Salary",
+        "amount": 25000,
+        "date": "09-05-2026",
+        "description": "Monthly salary"
+    },
+    {
+        "type": "expense",
+        "category": "Food",
+        "amount": 500,
+        "date": "09-05-2026",
+        "description": "Lunch"
+    },
+    {
+        "type": "income",
+        "category": "salary",
+        "amount": 25100,
+        "date": "10-11-2026",
+        "description": "monthly salary"
+    },
+    {
+        "type": "expense",
+        "category": "shopping",
+        "amount": 2000,
+        "date": "10-03-2025",
+        "description": "bought shoes"
+    },
+    {
+        "type": "income",
+        "category": "salary",
+        "amount": 25000,
+        "date": "11-05-2026",
+        "description": "monthly salary"
+    }
+]
