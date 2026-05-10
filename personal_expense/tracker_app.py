@@ -11,10 +11,6 @@ st.sidebar.title('Navigation')
 
 page=st.sidebar.radio('choose page',['home','view transaction','add transaction','summary'])
 
-# st.sidebar.radio('home')
-# st.sidebar.radio('add transactions')
-# st.sidebar.radio('view transactions')
-# st.sidebar.radio('summary')
 
 
 
@@ -38,12 +34,7 @@ elif page == 'view transaction':
         
         found=False
         if type_of_transaction=="All":
-            # st.write('-'*80)
-            # st.write(f"{'TYPE':<12}{'CATEGORY':<15}{'AMOUNT':<10}{'DATE':<15}{'DESCRIPTION'}")
-            # st.write('-'*80)
-            # for i in data:
-            #     st.write(f"{i['type']:<12}{i['category']:<15}{i['amount']:<10}{i['date']:<15}{i['description']}")
-            # st.write('-'*80)
+            
             df = pd.DataFrame(data)
             st.table(df)
         elif type_of_transaction=="income":
@@ -79,17 +70,6 @@ elif page == 'view transaction':
         
 
 
-        # else:
-        #     st.write('-'*80)
-        #     st.write(f"{'TYPE':<12}{'CATEGORY':<15}{'AMOUNT':<10}{'DATE':<15}{'DESCRIPTION'}")
-        #     st.write('-'*80)
-        #     for i in data:
-        #         if i['type']==type_of_transaction:
-        #             st.write(f"{i['type']:<12}{i['category']:<15}{i['amount']:<10}{i['date']:<15}{i['description']}")
-        #             found=True
-        #     st.write('-'*80)
-        #     if not found:
-        #         st.write("wrong spelling")
         
     transactions(data)
 
@@ -181,33 +161,6 @@ elif page == 'summary':
 
 
 
-
-# choose=st.selectbox('choice',['trasaction','new transactions','total income','total expenses','remaining balance','expense summary'])
-
-# if choose=="transaction":
-#     transactions(data)                         # to view transactions
-
-# elif choose=="new transaction":
-
-#     new_transactions(data)                            # to add new transaction
-
-# elif choose=="total income":
-
-#     salary=total_income(data)                  #print(salary)
-
-
-# elif choose=="total expense":
-
-#     expense=total_expense(data)
-
-# elif choose=="remaining balance":
-#     def balance_income(data):
-#         balance= salary-expense
-#         print(f"remaining balance {balance}")
-
-#     balance_income(data)
-# elif choose=="expense summary":
-#     summary(data)
 
 
 
